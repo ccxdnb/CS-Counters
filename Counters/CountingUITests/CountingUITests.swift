@@ -2,7 +2,6 @@
 //  CountingUITests.swift
 //  CountingUITests
 //
-//  Created by nisum on 27-06-20.
 //
 
 import XCTest

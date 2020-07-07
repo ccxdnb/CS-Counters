@@ -2,7 +2,6 @@
 //  APICountersSpy.swift
 //  CountersTests
 //
-//  Created by nisum on 07-07-20.
 //
 
 import Foundation

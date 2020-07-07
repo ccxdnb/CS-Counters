@@ -2,7 +2,6 @@
 //  APICountersService.swift
 //  Counters
 //
-//  Created by nisum on 30-06-20.
 //
 
 protocol APICountersService {

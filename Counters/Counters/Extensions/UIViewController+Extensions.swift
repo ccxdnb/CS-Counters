@@ -2,7 +2,6 @@
 //  UIViewController+Extensions.swift
 //  Counters
 //
-//  Created by nisum on 30-06-20.
 //
 
 import UIKit

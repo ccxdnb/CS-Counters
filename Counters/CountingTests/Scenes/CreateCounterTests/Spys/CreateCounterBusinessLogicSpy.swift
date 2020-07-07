@@ -2,7 +2,6 @@
 //  CreateCounterBusinessLogicSpy.swift
 //  Counters
 //
-//  Copyright © 2019 Banco de Crédito e Inversiones. All rights reserved.
 //
 
 @testable import Counters

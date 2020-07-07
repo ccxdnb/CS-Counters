@@ -2,7 +2,6 @@
 //  ExampleCountersTableViewCell.swift
 //  Counters
 //
-//  Created by nisum on 05-07-20.
 //
 
 import UIKit

@@ -2,7 +2,6 @@
 //  BottomButtonsView.swift
 //  Counters
 //
-//  Created by nisum on 01-07-20.
 //
 
 import UIKit

@@ -2,7 +2,6 @@
 //  SpinnerViewController.swift
 //  Counters
 //
-//  Created by nisum on 07-07-20.
 //
 
 import UIKit

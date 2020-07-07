@@ -2,17 +2,8 @@
 //  CreateCounterInteractorTests.swift
 //  Counters
 //
-//  Copyright © 2019 Banco de Crédito e Inversiones. All rights reserved.
 //
 
-// swiftlint:disable superfluous_disable_command
-// swiftlint:disable file_length
-// swiftlint:disable force_cast
-// swiftlint:disable identifier_name
-// swiftlint:disable implicitly_unwrapped_optional
-// swiftlint:disable line_length
-
-@testable import Counters
 import XCTest
 
 class CreateCounterInteractorTests: XCTestCase {

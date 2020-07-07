@@ -2,7 +2,6 @@
 //  UITableView+Extensions.swift
 //  Counters
 //
-//  Created by nisum on 06-07-20.
 //
 
 import UIKit

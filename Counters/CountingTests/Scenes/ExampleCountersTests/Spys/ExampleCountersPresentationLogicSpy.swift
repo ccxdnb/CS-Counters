@@ -2,7 +2,6 @@
 //  ExampleCountersPresentationLogicSpy.swift
 //  Counters
 //
-//  Copyright © 2019 Banco de Crédito e Inversiones. All rights reserved.
 //
 
 class ExampleCountersPresentationLogicSpy: ExampleCountersPresentationLogic {

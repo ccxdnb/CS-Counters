@@ -2,7 +2,6 @@
 //  APIConstants.swift
 //  Counters
 //
-//  Created by nisum on 29-06-20.
 //
 
 import Foundation
