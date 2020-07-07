@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17132" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17105"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" tag="-1" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ExampleCountersTableViewCell" id="Tsd-6Z-7RQ" customClass="ExampleCountersTableViewCell" customModule="Counters" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Tsd-6Z-7RQ" id="GMb-mN-l6i">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" directionalLockEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="XQt-Qa-ZMw">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
+                        <color key="backgroundColor" name="bgGray"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="PeD-AN-uA6">
+                            <size key="itemSize" width="128" height="128"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                    </collectionView>
+                </subviews>
+                <color key="backgroundColor" name="bgGray"/>
+                <constraints>
+                    <constraint firstItem="XQt-Qa-ZMw" firstAttribute="top" secondItem="GMb-mN-l6i" secondAttribute="top" id="29C-TL-r8Y"/>
+                    <constraint firstAttribute="bottom" secondItem="XQt-Qa-ZMw" secondAttribute="bottom" id="ZxH-u9-uAl"/>
+                    <constraint firstAttribute="trailing" secondItem="XQt-Qa-ZMw" secondAttribute="trailing" id="jqI-6k-UQs"/>
+                    <constraint firstItem="XQt-Qa-ZMw" firstAttribute="leading" secondItem="GMb-mN-l6i" secondAttribute="leading" id="l30-yM-ZYK"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" name="bgGray"/>
+            <connections>
+                <outlet property="collectionView" destination="XQt-Qa-ZMw" id="vAY-uf-OIR"/>
+            </connections>
+            <point key="canvasLocation" x="121.73913043478262" y="-168.08035714285714"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <namedColor name="bgGray">
+            <color red="0.93000000715255737" green="0.93000000715255737" blue="0.93000000715255737" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

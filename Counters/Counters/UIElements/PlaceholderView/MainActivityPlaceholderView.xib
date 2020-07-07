@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17132" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17105"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="J0k-fm-cB1" customClass="MainActivityPlaceholderView" customModule="Counters" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="304" height="161"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No counters yet" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zSD-gN-Zhs">
+                    <rect key="frame" x="91.5" y="0.0" width="121" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TIL-51-eoW">
+                    <rect key="frame" x="94.5" y="81.5" width="115" height="30"/>
+                    <color key="backgroundColor" name="MainOrange"/>
+                    <state key="normal" title="Create a counter">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="8"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cHw-Hv-MjJ">
+                    <rect key="frame" x="0.0" y="41" width="304" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="cHw-Hv-MjJ" firstAttribute="top" secondItem="zSD-gN-Zhs" secondAttribute="bottom" constant="20" id="4hE-Ng-GpM"/>
+                <constraint firstItem="TIL-51-eoW" firstAttribute="top" secondItem="cHw-Hv-MjJ" secondAttribute="bottom" constant="20" id="Bfp-xY-xS9"/>
+                <constraint firstItem="TIL-51-eoW" firstAttribute="centerX" secondItem="J0k-fm-cB1" secondAttribute="centerX" id="Da1-C2-PFL"/>
+                <constraint firstItem="cHw-Hv-MjJ" firstAttribute="leading" secondItem="J0k-fm-cB1" secondAttribute="leading" id="Pn0-Nf-0gz"/>
+                <constraint firstAttribute="trailing" secondItem="cHw-Hv-MjJ" secondAttribute="trailing" id="RDA-tt-tSH"/>
+                <constraint firstItem="zSD-gN-Zhs" firstAttribute="centerX" secondItem="J0k-fm-cB1" secondAttribute="centerX" id="i3i-pv-mM7"/>
+                <constraint firstItem="zSD-gN-Zhs" firstAttribute="top" secondItem="J0k-fm-cB1" secondAttribute="top" id="kcw-ry-yMQ"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="actionButton" destination="TIL-51-eoW" id="frc-Si-oxv"/>
+                <outlet property="bodyLabel" destination="cHw-Hv-MjJ" id="20n-Ec-ddJ"/>
+                <outlet property="titleLabel" destination="zSD-gN-Zhs" id="Zow-Pt-AWl"/>
+            </connections>
+            <point key="canvasLocation" x="-297.10144927536237" y="86.71875"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="MainOrange">
+            <color red="1" green="0.57999998331069946" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

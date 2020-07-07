@@ -1,0 +1,53 @@
+/*
+  Localizable.strings
+  Counting
+
+  Created by nisum on 27-06-20.
+
+*/
+
+//counters list
+COUNTERSLIST_TITLE = "Counters";
+COUNTERSLIST_EDIT_BUTTON = "Edit";
+COUNTERSLIST_DONE_BUTTON = "Done";
+COUNTERSLIST_SELECTALL_BUTTON = "Select All";
+COUNTERSLIST_FOOTER_BODY = "%i items · Counted %i times";
+
+NO_COUNTERS_PH_TITLE = "No counters yet";
+NO_COUNTERS_PH_BODY = "“When I started counting my blessings, my whole life turned around.”\n—Willie Nelson";
+NO_COUNTERS_PH_BUTTON_TITLE = "Create a counter";
+
+NO_INTERNET_PH_TITLE = "Couldn’t load the counters";
+NO_INTERNET_PH_BODY = "The Internet connection appears to be offline.";
+NO_INTERNET_PH_BUTTON_TITLE = "Retry";
+
+DELETECOUNTER_CONFIRMATION_DELETE_BUTTON_TITLE = "Delete %i counter";
+DELETECOUNTER_CONFIRMATION_CANCEL_BUTTON_TITLE = "Cancel";
+
+DELETECOUNTER_ERROR_ALERT_TITLE = "Couldn’t delete the counter %@";
+DELETECOUNTER_ERROR_ALERT_MESSAGE = "The Internet connection appears to be offline.";
+DELETECOUNTER_ERROR_ALERT_BUTTON = "Dismiss";
+
+// Create counter
+CREATE_COUNTER_TITLE = "Create Counter";
+CREATE_COUNTER_CANCEL_BUTTON = "Cancel";
+CREATE_COUNTER_SAVE_BUTTON = "Save";
+CREATE_COUNTER_SUBTITLE_BASE = "Give it a name. Creative block? See ";
+CREATE_COUNTER_EXAMPLE_LINK = "examples.";
+
+NO_INTERNET_ALERT_TITLE = "Couldn’t create the counter";
+NO_INTERNET_ALERT_MESSAGE = "The Internet connection appears to be offline.";
+NO_INTERNET_ALERT_BUTTON = "Dismiss";
+
+
+
+// Update Counter
+UPDATE_COUNTER_ERROR_ALERT_TITLE = "Couldn’t update the “%@” counter to %i.";
+UPDATE_COUNTER_ERROR_ALERT_MESSAGE = "The Internet connection appears to be offline.";
+UPDATE_COUNTER_ERROR_ALERT_BUTTON_PRIMARY = "Retry";
+UPDATE_COUNTER_ERROR_ALERT_BUTTON_SECONDARY = "Dismiss";
+
+// Example Counters
+
+EXAMPLE_COUNTER_TITLE = "Example";
+EXAMPLE_COUNTER_SUBTITLE = "Select an example to add it to your counters.";

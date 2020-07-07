@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17132" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="hTb-o4-Evs">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17105"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Counters-->
+        <scene sceneID="2oO-RF-0Qd">
+            <objects>
+                <viewController storyboardIdentifier="CountersListViewController" id="dqf-sB-evk" customClass="CountersListViewController" customModule="Counters" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8MR-82-ZII">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WRU-Df-C2z">
+                                <rect key="frame" x="0.0" y="813" width="414" height="83"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gU6-M4-eQg">
+                                        <rect key="frame" x="376" y="9" width="24" height="26"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="26" id="Y8S-Kk-20S"/>
+                                            <constraint firstAttribute="width" constant="24" id="gVE-sg-Yki"/>
+                                        </constraints>
+                                        <color key="tintColor" name="MainOrange"/>
+                                        <state key="normal" image="plus" catalog="system">
+                                            <color key="titleColor" name="MainOrange"/>
+                                        </state>
+                                    </button>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QbK-LE-DXh">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1"/>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.14999999999999999" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1" id="2Ns-Yp-axI"/>
+                                        </constraints>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4 items · Counted 16 times" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cb2-FT-Z13">
+                                        <rect key="frame" x="115" y="13" width="184" height="18"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <color key="textColor" name="textGray"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CqD-Gv-Bkg">
+                                        <rect key="frame" x="16" y="9" width="24" height="26"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="26" id="2RH-Kd-srl"/>
+                                            <constraint firstAttribute="width" constant="24" id="JYT-1k-Aph"/>
+                                        </constraints>
+                                        <color key="tintColor" name="MainOrange"/>
+                                        <state key="normal" image="trash" catalog="system">
+                                            <color key="titleColor" name="MainOrange"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" name="navBar"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="83" id="7fB-xz-3JD"/>
+                                    <constraint firstItem="gU6-M4-eQg" firstAttribute="top" secondItem="WRU-Df-C2z" secondAttribute="top" constant="9" id="P2H-V3-slv"/>
+                                    <constraint firstItem="QbK-LE-DXh" firstAttribute="leading" secondItem="WRU-Df-C2z" secondAttribute="leading" id="PKU-CT-43W"/>
+                                    <constraint firstItem="CqD-Gv-Bkg" firstAttribute="leading" secondItem="WRU-Df-C2z" secondAttribute="leading" constant="16" id="Spo-Pn-hIV"/>
+                                    <constraint firstItem="Cb2-FT-Z13" firstAttribute="centerX" secondItem="WRU-Df-C2z" secondAttribute="centerX" id="VY5-8a-EPa"/>
+                                    <constraint firstItem="Cb2-FT-Z13" firstAttribute="top" secondItem="WRU-Df-C2z" secondAttribute="top" constant="13" id="Y64-k7-3mx"/>
+                                    <constraint firstAttribute="trailing" secondItem="gU6-M4-eQg" secondAttribute="trailing" constant="14" id="Zvu-Rc-lXG"/>
+                                    <constraint firstItem="CqD-Gv-Bkg" firstAttribute="top" secondItem="WRU-Df-C2z" secondAttribute="top" constant="9" id="fZO-C3-2ke"/>
+                                    <constraint firstItem="QbK-LE-DXh" firstAttribute="top" secondItem="WRU-Df-C2z" secondAttribute="top" id="gwk-MK-xjq"/>
+                                    <constraint firstAttribute="trailing" secondItem="QbK-LE-DXh" secondAttribute="trailing" id="tim-Iv-cl2"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="BDh-6N-jiT">
+                                <rect key="frame" x="0.0" y="140" width="414" height="673"/>
+                                <color key="backgroundColor" name="bgGray"/>
+                                <color key="separatorColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="sectionIndexBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="unj-hC-kfH"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="WRU-Df-C2z" firstAttribute="trailing" secondItem="8MR-82-ZII" secondAttribute="trailing" id="43E-EW-EB7"/>
+                            <constraint firstItem="BDh-6N-jiT" firstAttribute="leading" secondItem="8MR-82-ZII" secondAttribute="leading" id="A3e-UW-47j"/>
+                            <constraint firstItem="WRU-Df-C2z" firstAttribute="top" secondItem="BDh-6N-jiT" secondAttribute="bottom" id="Bpk-X2-88s"/>
+                            <constraint firstItem="BDh-6N-jiT" firstAttribute="top" secondItem="unj-hC-kfH" secondAttribute="top" id="IKX-6B-cEg"/>
+                            <constraint firstItem="WRU-Df-C2z" firstAttribute="leading" secondItem="8MR-82-ZII" secondAttribute="leading" id="cTh-0e-UFB"/>
+                            <constraint firstAttribute="bottom" secondItem="WRU-Df-C2z" secondAttribute="bottom" id="h5Q-OW-YBp"/>
+                            <constraint firstAttribute="bottom" secondItem="WRU-Df-C2z" secondAttribute="bottom" id="hRW-xD-O5E"/>
+                            <constraint firstItem="BDh-6N-jiT" firstAttribute="trailing" secondItem="unj-hC-kfH" secondAttribute="trailing" id="lMT-hw-COj"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Counters" id="GmS-TA-kOE"/>
+                    <connections>
+                        <outlet property="countersTableView" destination="BDh-6N-jiT" id="t9z-AX-jf8"/>
+                        <outlet property="footerLabel" destination="Cb2-FT-Z13" id="0EB-tI-qlS"/>
+                        <outlet property="plusButton" destination="gU6-M4-eQg" id="ztj-jn-G8N"/>
+                        <outlet property="trashButton" destination="CqD-Gv-Bkg" id="Bov-xe-bNU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3vl-X4-23t" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2502.898550724638" y="14.732142857142856"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="FRy-w7-DSv">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="hTb-o4-Evs" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="6de-qE-4y2">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" name="navBar"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="dqf-sB-evk" kind="relationship" relationship="rootViewController" id="FZV-gS-CUX"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hto-0H-8sT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1592.753623188406" y="14.732142857142856"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="plus" catalog="system" width="128" height="113"/>
+        <image name="trash" catalog="system" width="118" height="128"/>
+        <namedColor name="MainOrange">
+            <color red="1" green="0.57999998331069946" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="bgGray">
+            <color red="0.93000000715255737" green="0.93000000715255737" blue="0.93000000715255737" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="navBar">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="textGray">
+            <color red="0.53299999237060547" green="0.54500001668930054" blue="0.56499999761581421" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
