@@ -8,9 +8,6 @@ import Foundation
 /// A dictionary of parameters to apply to a `URLRequest`.
 public typealias Parameters = [String: Any]
 
-/// A successfull clousure type on request completion
-public typealias SuccessCallBack = (Decodable, Int) -> Void
-
 /// A failure clousure type on request completion
 public typealias ErrorCallBack = (Error?, Int) -> Void
 
@@ -148,5 +145,4 @@ final class Network  {
 
         task?.resume()
     }
-
 }

@@ -30,7 +30,6 @@ extension UIViewController {
             viewModel.primaryButtonAction?()
         }))
 
-
         present(alert, animated: true)
     }
 }

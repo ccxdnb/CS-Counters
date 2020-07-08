@@ -43,14 +43,7 @@ class ExampleCountersPresenterTests: XCTestCase {
         // When
         sut.presentExamples(response: response)
         // Then
-        XCTAssertTrue(spyViewController.displayExamplesCalled, "presentSomething(response:) should ask the view controller to display the result")
-        XCTAssertEqual(spyViewController.displayExamplesViewModel?.examples.keys.first, "CATEGORY", "presentMovements should change the value to the correct format")
+        XCTAssertTrue(spyViewController.displayExamplesCalled)
+        XCTAssertEqual(spyViewController.displayExamplesViewModel?.examples.keys.first, "CATEGORY")
     }
 }
-
-// swiftlint:enable line_length
-// swiftlint:enable implicitly_unwrapped_optional
-// swiftlint:enable identifier_name
-// swiftlint:enable force_cast
-// swiftlint:enable file_length
-// swiftlint:enable superfluous_disable_command

@@ -57,8 +57,8 @@ class ExampleCountersViewControllerTests: XCTestCase {
         // Given
         // When
         // Then
-        XCTAssertTrue(spyInteractor.doExamplesCalled, "viewDidLoad() should ask the interactor to do something")
-        XCTAssertNotNil(spyInteractor.doExamplesRequest, "some value")
+        XCTAssertTrue(spyInteractor.doExamplesCalled)
+        XCTAssertNotNil(spyInteractor.doExamplesRequest)
     }
 
      func testDisplayExamplesCalled() {
@@ -69,7 +69,7 @@ class ExampleCountersViewControllerTests: XCTestCase {
         sut.displayExamples(viewModel: viewModel)
 
         // Then
-        XCTAssertEqual(Array(sut.examples.keys).first, "CATEGORY", "displaySomething(viewModel:) should update the name text field")
-        XCTAssertEqual(sut.examples["CATEGORY"]?.first, "VALUE1", "displaySomething(viewModel:) should update the name text field")
+        XCTAssertEqual(Array(sut.examples.keys).first, "CATEGORY")
+        XCTAssertEqual(sut.examples["CATEGORY"]?.first, "VALUE1")
     }
 }

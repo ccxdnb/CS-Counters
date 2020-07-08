@@ -10,6 +10,4 @@ class ExampleCountersDisplayLogicSpy: ExampleCountersDisplayLogic {
         displayExamplesCalled = true
         displayExamplesViewModel = viewModel
     }
-
-
 }

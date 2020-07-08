@@ -15,25 +15,27 @@ protocol CountersListDataPassing {
 }
 
 class CountersListRouter: NSObject, CountersListRoutingLogic, CountersListDataPassing {
-    func routeToCreateCounter() {
-        let bundle = Bundle(for: CountersListRouter.self)
-
-        guard let destinationVC: UIViewController = UIStoryboard(name: "CreateCounter", bundle: bundle).instantiateViewController(withIdentifier: "CreateCounterViewController") as? CreateCounterViewController else { return }
-
-        destinationVC.modalPresentationStyle = .fullScreen
-        viewController?.navigationController?.pushViewController(destinationVC, animated: true)
-    }
-
 
     weak var viewController: CountersListViewController?
     var dataStore: CountersListDataStore?
 
     // MARK: - Routing
 
+    func routeToCreateCounter() {
+        let bundle = Bundle(for: CountersListRouter.self)
+
+        guard let destinationVC: UIViewController = UIStoryboard(name: "CreateCounter", bundle: bundle).instantiateViewController(withIdentifier: "CreateCounterViewController") as? CreateCounterViewController else { return }
+
+        destinationVC.modalPresentationStyle = .fullScreen
+        navigateTo(vc: destinationVC)
+
+    }
+    // MARK: - Navigation
+
+    private func navigateTo(vc: UIViewController){
+        viewController?.navigationController?.pushViewController(vc, animated: true)
+    }
 
     // MARK: - Passing data
 
-    //func passDataToSomewhere(source: CountingListDataStore, destination: inout SomewhereDataStore) {
-    //  destination.name = source.name
-    //}
 }

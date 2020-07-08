@@ -11,7 +11,6 @@ protocol ExampleCountersBusinessLogic {
 }
 
 protocol ExampleCountersDataStore {
-    //var name: String { get set }
 }
 
 class ExampleCountersInteractor: ExampleCountersBusinessLogic, ExampleCountersDataStore {
@@ -21,12 +20,12 @@ class ExampleCountersInteractor: ExampleCountersBusinessLogic, ExampleCountersDa
     // MARK: Methods
 
     func doExamples(request: ExampleCounters.Examples.Request) {
-
+        // TODO: replace for service call
         let testExamples = [
-            "DRINKS": ["COFFE","BEER","PECSI","COFFE","BEER","PECSI"],
-            "FOOD": ["BEYOND","PANCHO","PECSI","COFFE","BEER","PECSI"],
-            "MISC": ["NAPS","PAJA DSD DSA DS S","PECSI","COFFE","BEER","PECSI","COFFE","BEER","PECSI"],
-            "SPORT": ["SQUATS","fLEXI","ABS","COFFE","BEER","PECSI"],
+            "DRINKS": ["Coffe","Beer","Juice","Te","More beer","Wine"],
+            "FOOD": ["Burgers","Completo","Sushi","Milanesas","Pizza","Empanada"],
+            "MISC": ["Naps","Yoga","Tutorials","Apps","Loundry","Dishes","Shits"],
+            "SPORT": ["Squats","Abs","Kilometers","Vegetables","Protein bars","laps"],
         ]
 
         presenter?.presentExamples(response: .init(examples: testExamples))

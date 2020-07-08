@@ -32,17 +32,15 @@ class ExampleCountersRouter: NSObject, ExampleCountersRoutingLogic, ExampleCount
         }
 
         createCounterVC.inject(counterName: exampleCounter)
-        navigateToCreateCounter()
+        pop(animated: true)
     }
     // MARK: Navigation
 
-    private func navigateToCreateCounter(){
-        viewController?.navigationController?.popViewController(animated: true)
+    private func pop(animated: Bool){
+        viewController?.navigationController?.popViewController(animated: animated)
     }
     
     // MARK: Passing data
 
-    // func passDataToSomewhere(source: CreateCounterDataStore, destination: inout SomewhereDataStore) {
-    //  destination.name = source.name
-    //}
+    
 }

@@ -40,13 +40,13 @@ public class APICounters: APICountersService {
         onSuccess: @escaping ([Counter], Int) -> Void,
         onError: @escaping (ErrorCallBack)
     ) {
-    Network().request(
-        urlString: APIConstants.counterBaseURL,
-        method: .DELETE,
-        parameters: request,
-        responseType: [Counter].self,
-        onSuccess: onSuccess,
-        onFailure: onError)
+        Network().request(
+            urlString: APIConstants.counterBaseURL,
+            method: .DELETE,
+            parameters: request,
+            responseType: [Counter].self,
+            onSuccess: onSuccess,
+            onFailure: onError)
     }
 
     func increaseCounter(
@@ -54,13 +54,13 @@ public class APICounters: APICountersService {
         onSuccess: @escaping ([Counter], Int) -> Void,
         onError: @escaping (ErrorCallBack)
     ) {
-    Network().request(
-        urlString: APIConstants.increaseCounterURL,
-        method: .POST,
-        parameters: request,
-        responseType: [Counter].self,
-        onSuccess: onSuccess,
-        onFailure: onError)
+        Network().request(
+            urlString: APIConstants.increaseCounterURL,
+            method: .POST,
+            parameters: request,
+            responseType: [Counter].self,
+            onSuccess: onSuccess,
+            onFailure: onError)
     }
 
     func decreaseCounter(
@@ -68,12 +68,12 @@ public class APICounters: APICountersService {
         onSuccess: @escaping ([Counter], Int) -> Void,
         onError: @escaping (ErrorCallBack)
     ) {
-    Network().request(
-        urlString: APIConstants.decreaseCounterURL,
-        method: .POST,
-        parameters: request,
-        responseType: [Counter].self,
-        onSuccess: onSuccess,
-        onFailure: onError)
+        Network().request(
+            urlString: APIConstants.decreaseCounterURL,
+            method: .POST,
+            parameters: request,
+            responseType: [Counter].self,
+            onSuccess: onSuccess,
+            onFailure: onError)
     }
 }

@@ -4,7 +4,6 @@
 //
 //
 
-// swiftlint:disable nesting
 enum CreateCounter {
 
     enum NewCounter {
@@ -48,5 +47,3 @@ enum CreateCounter {
         }
     }
 }
-
-// swiftlint:enable nesting

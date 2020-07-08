@@ -47,9 +47,9 @@ class CreateCounterPresenterTests: XCTestCase {
         // When
         sut.presentCounterList(response: response)
         // Then
-        XCTAssertTrue(spyViewController.displayCountersListCalled, "presentSomething(response:) should ask the view controller to display the result")
-        XCTAssertEqual(spyViewController.displayCountersListViewModelSuccess?.counters.first?.title, "test1", "presentMovements should change the value to the correct format")
-        XCTAssertEqual(spyViewController.displayCountersListViewModelSuccess?.counters.last?.title, "test3", "presentMovements should change the value to the correct format")
+        XCTAssertTrue(spyViewController.displayCountersListCalled)
+        XCTAssertEqual(spyViewController.displayCountersListViewModelSuccess?.counters.first?.title, "test1")
+        XCTAssertEqual(spyViewController.displayCountersListViewModelSuccess?.counters.last?.title, "test3")
     }
 
     func testPresentError() {
@@ -57,7 +57,7 @@ class CreateCounterPresenterTests: XCTestCase {
        // When
        sut.presentConnectionError()
        // Then
-       XCTAssertTrue(spyViewController.displayErrorAlertCalled, "presentSomething(response:) should ask the view controller to display the result")
+       XCTAssertTrue(spyViewController.displayErrorAlertCalled)
   }
 }
 

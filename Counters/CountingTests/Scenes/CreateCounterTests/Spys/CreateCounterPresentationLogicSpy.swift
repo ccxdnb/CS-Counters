@@ -20,5 +20,4 @@ class CreateCounterPresentationLogicSpy: CreateCounterPresentationLogic {
     func presentConnectionError() {
         presentConnectionErrorCalled = true
     }
-
 }

@@ -47,8 +47,8 @@ class CountersListPresenterTests: XCTestCase {
         // When
         sut.presentCounterList(response: response)
         // Then
-        XCTAssertTrue(spyViewController.displayCountingListCalled, "presentSomething(response:) should ask the view controller to display the result")
-        XCTAssertEqual(spyViewController.displayCountingListViewModel?.counters.first?.id, "id1", "presentMovements should change the value to the correct format")
+        XCTAssertTrue(spyViewController.displayCountingListCalled)
+        XCTAssertEqual(spyViewController.displayCountingListViewModel?.counters.first?.id, "id1")
     }
 
     func testPresentDeletedCounter() {
@@ -59,8 +59,8 @@ class CountersListPresenterTests: XCTestCase {
         // When
         sut.presentDeletedCounter(response: response)
         // Then
-        XCTAssertTrue(spyViewController.displayDeleteCounterCalled, "presentSomething(response:) should ask the view controller to display the result")
-        XCTAssertEqual(spyViewController.displayDeleteCounterViewModel?.counter.id, "id1", "presentMovements should change the value to the correct format")
+        XCTAssertTrue(spyViewController.displayDeleteCounterCalled)
+        XCTAssertEqual(spyViewController.displayDeleteCounterViewModel?.counter.id, "id1")
     }
 
     func testPresentEmtpyCounterList() {
@@ -68,8 +68,8 @@ class CountersListPresenterTests: XCTestCase {
         // When
         sut.presentEmptyCountingList()
         // Then
-        XCTAssertTrue(spyViewController.displayPlaceHolderViewCalled, "presentSomething(response:) should ask the view controller to display the result")
-        XCTAssertEqual(spyViewController.displayPlaceHolderViewViewModel?.title, "NO_COUNTERS_PH_TITLE".localized, "presentMovements should change the value to the correct format")
+        XCTAssertTrue(spyViewController.displayPlaceHolderViewCalled)
+        XCTAssertEqual(spyViewController.displayPlaceHolderViewViewModel?.title, "NO_COUNTERS_PH_TITLE".localized)
     }
 
     func testPresentNoInternetList() {
@@ -77,8 +77,8 @@ class CountersListPresenterTests: XCTestCase {
         // When
         sut.presentNoInternetList()
         // Then
-        XCTAssertTrue(spyViewController.displayPlaceHolderViewCalled, "presentSomething(response:) should ask the view controller to display the result")
-        XCTAssertEqual(spyViewController.displayPlaceHolderViewViewModel?.title, "NO_INTERNET_PH_TITLE".localized, "presentMovements should change the value to the correct format")
+        XCTAssertTrue(spyViewController.displayPlaceHolderViewCalled)
+        XCTAssertEqual(spyViewController.displayPlaceHolderViewViewModel?.title, "NO_INTERNET_PH_TITLE".localized)
     }
 
     func testPresentDeleteError() {
@@ -90,8 +90,10 @@ class CountersListPresenterTests: XCTestCase {
         // When
         sut.presentDeleteError(response: response)
         // Then
-        XCTAssertTrue(spyViewController.displayDeleteErrorAlertCalled, "presentSomething(response:) should ask the view controller to display the result")
-        XCTAssertEqual(spyViewController.displayDeleteErrorAlertViewModel?.title, "DELETECOUNTER_ERROR_ALERT_TITLE".localized(with: response.counter.title), "presentMovements should change the value to the correct format")
+        XCTAssertTrue(spyViewController.displayDeleteErrorAlertCalled)
+        XCTAssertEqual(spyViewController.displayDeleteErrorAlertViewModel?.title,
+                       "DELETECOUNTER_ERROR_ALERT_TITLE".localized(with: response.counter.title)
+        )
     }
 
     func testPresentUpdatedCounter() {
@@ -102,8 +104,8 @@ class CountersListPresenterTests: XCTestCase {
         // When
         sut.presentUpdatedCounter(response: response)
         // Then
-        XCTAssertTrue(spyViewController.displayUpdateCounterCalled, "presentSomething(response:) should ask the view controller to display the result")
-        XCTAssertEqual(spyViewController.displayUpdateCounterViewModel?.counter.id, "id1", "presentMovements should change the value to the correct format")
+        XCTAssertTrue(spyViewController.displayUpdateCounterCalled)
+        XCTAssertEqual(spyViewController.displayUpdateCounterViewModel?.counter.id, "id1")
     }
 
     func testPresentUpdateErrorIncrease() {
@@ -116,13 +118,10 @@ class CountersListPresenterTests: XCTestCase {
         sut.presentUpdateError(response: response)
         // Then
         XCTAssertTrue(
-            spyViewController.displayUpdateErrorAlertCalled,
-            "presentSomething(response:) should ask the view controller to display the result"
-        )
+            spyViewController.displayUpdateErrorAlertCalled)
         XCTAssertEqual(
             spyViewController.displayUpdateErrorAlertViewModel?.title,
-            "UPDATE_COUNTER_ERROR_ALERT_TITLE".localized(with: response.counter.title, response.counter.count + 1),
-            "presentMovements should change the value to the correct format"
+            "UPDATE_COUNTER_ERROR_ALERT_TITLE".localized(with: response.counter.title, response.counter.count + 1)
         )
     }
 
@@ -135,14 +134,10 @@ class CountersListPresenterTests: XCTestCase {
         // When
         sut.presentUpdateError(response: response)
         // Then
-        XCTAssertTrue(
-            spyViewController.displayUpdateErrorAlertCalled,
-            "presentSomething(response:) should ask the view controller to display the result"
-        )
+        XCTAssertTrue(spyViewController.displayUpdateErrorAlertCalled)
         XCTAssertEqual(
             spyViewController.displayUpdateErrorAlertViewModel?.title,
-            "UPDATE_COUNTER_ERROR_ALERT_TITLE".localized(with: response.counter.title, response.counter.count - 1),
-            "presentMovements should change the value to the correct format"
+            "UPDATE_COUNTER_ERROR_ALERT_TITLE".localized(with: response.counter.title, response.counter.count - 1)
         )
     }
 

@@ -44,9 +44,7 @@ public class BottomButtonsView: UIView {
           let window = sceneDelegate.window else { return }
 
         frame = window.frame
-
         window.addSubview(self)
-        
 
         actionButton.titleLabel?.font = .systemFont(ofSize: 20, weight: .regular)
         actionButton.tintColor = .red

@@ -14,6 +14,8 @@ class ViewController: UIViewController {
 
     }
 
+
+
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         let launchedBefore = UserDefaults.standard.bool(forKey: "launchedBefore")
@@ -29,7 +31,10 @@ class ViewController: UIViewController {
     private func presentCountingListVC() {
         let bundle = Bundle(for: CountersListViewController.self)
 
-        guard let destinationVC: UIViewController = UIStoryboard(name: "CountingList", bundle: bundle).instantiateViewController(withIdentifier: "CountersListViewController") as? CountersListViewController else { return }
+        guard let destinationVC: UIViewController = UIStoryboard(
+                name: "CountingList",
+                bundle: bundle
+        ).instantiateViewController(withIdentifier: "CountersListViewController") as? CountersListViewController else { return }
 
         self.navigationController?.pushViewController(destinationVC, animated: false)
     }
@@ -47,7 +52,6 @@ class ViewController: UIViewController {
 
         let currentWindow: UIWindow? = UIApplication.shared.windows.first
         currentWindow?.addSubview(welcomeView)
-
-        view.addSubview(welcomeView)
+        welcomeView.bindEdgesToSuperView()
     }
 }

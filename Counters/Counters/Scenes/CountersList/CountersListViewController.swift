@@ -136,11 +136,9 @@ class CountersListViewController:
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
         tap.cancelsTouchesInView = false
         view.addGestureRecognizer(tap)
-
         view.backgroundColor = .white
 
         setupTableView()
-
         setupSearchController()
 
         plusButton.addTarget(self, action: #selector(plusButtonPressed), for: .touchUpInside)
@@ -347,8 +345,16 @@ class CountersListViewController:
         placeHolderView.widthAnchor.constraint(equalToConstant: 304).isActive = true
         placeHolderView.heightAnchor.constraint(equalToConstant: 161).isActive = true
 
-        placeHolderView.centerYAnchor.constraint(equalTo: self.view.centerYAnchor,constant: 0).isActive = true
-        placeHolderView.centerXAnchor.constraint(equalTo: self.view.centerXAnchor,constant: 0).isActive = true
+        placeHolderView.centerYAnchor.constraint(
+            equalTo: self.view.centerYAnchor,
+            constant: 0
+        ).isActive = true
+
+        placeHolderView.centerXAnchor.constraint(
+            equalTo: self.view.centerXAnchor,
+            constant: 0
+        ).isActive = true
+
         updateFooterLabel()
         hideActivityIndicator()
     }
@@ -367,7 +373,6 @@ class CountersListViewController:
     }
 
     func displayUpdateErrorAlert(viewModel: CountersList.UpdateCounter.ViewModel.Failure) {
-
         guard let counter = viewModel.counter else {
             debugPrint("this should be possible")
             return

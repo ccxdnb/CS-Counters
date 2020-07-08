@@ -22,5 +22,4 @@ class CreateCounterDisplayLogicSpy: CreateCounterDisplayLogic {
         displayErrorAlertCalled = true
         displayCountersListViewModelFailure = viewModel
     }
-
 }

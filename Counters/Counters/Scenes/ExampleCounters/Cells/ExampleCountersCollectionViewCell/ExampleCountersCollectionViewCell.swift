@@ -10,7 +10,6 @@ class ExampleCountersCollectionViewCell: UICollectionViewCell {
 
     @IBOutlet private weak var titleLabel: UILabel!
 
-
     var data: String? {
         didSet {
             if let data = data {

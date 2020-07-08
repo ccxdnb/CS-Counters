@@ -4,7 +4,7 @@
 //
 //
 
-import UIKit
+import Foundation
 
 struct Counter: Codable {
     let id: String

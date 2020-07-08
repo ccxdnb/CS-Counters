@@ -7,6 +7,7 @@
 import XCTest
 
 class CountersListViewControllerTests: XCTestCase {
+    
     // MARK: Subject under test
     var sut: CountersListViewController!
     var spyInteractor: CountersListBusinessLogicSpy!
@@ -57,7 +58,7 @@ class CountersListViewControllerTests: XCTestCase {
        // Given
        // When
        // Then
-       XCTAssertTrue(spyInteractor.doCountersListCalled, "viewDidLoad() should ask the interactor to do something")
+       XCTAssertTrue(spyInteractor.doCountersListCalled)
    }
 
     func testDecreaseButtonPressed() {

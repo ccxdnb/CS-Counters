@@ -22,7 +22,6 @@ class ExampleCountersTableViewCell:
         }
     }
     var cells = [ExampleCountersCollectionViewCell]()
-
     weak var delegate: CounterTableViewCellDelegate?
 
     override func awakeFromNib() {
@@ -72,11 +71,11 @@ class ExampleCountersTableViewCell:
 
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
 
-            let label = UILabel(frame: CGRect.zero)
-            label.text = data![indexPath.item]
-            label.clipsToBounds = true
-            label.layer.masksToBounds = true
-            label.sizeToFit()
+        let label = UILabel(frame: CGRect.zero)
+        label.text = data![indexPath.item]
+        label.clipsToBounds = true
+        label.layer.masksToBounds = true
+        label.sizeToFit()
 
         return CGSize(width: label.frame.width + 30, height: 55)
     }

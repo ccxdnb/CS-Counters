@@ -33,7 +33,7 @@ class CreateCounterRouter: NSObject, CreateCounterRoutingLogic, CreateCounterDat
         }
 
         counterListVC.inject(counters: newCounters)
-        viewController?.navigationController?.popViewController(animated: true)
+        pop(animated: true)
     }
 
     func routeToExampleCounters() {
@@ -41,19 +41,19 @@ class CreateCounterRouter: NSObject, CreateCounterRoutingLogic, CreateCounterDat
 
         guard let destinationVC: UIViewController = UIStoryboard(name: "ExampleCounters", bundle: bundle).instantiateViewController(withIdentifier: "ExampleCountersViewController") as? ExampleCountersViewController else { return }
 
-        viewController?.navigationController?.pushViewController(destinationVC, animated: true)
-
+            navigateTo(vc:destinationVC)
     }
 
     // MARK: Navigation
 
-    // func navigateToSomewhere(source: CreateCounterViewController, destination: SomewhereViewController) {
-    //  source.show(destination, sender: nil)
-    //}
+    private func navigateTo(vc: UIViewController){
+        viewController?.navigationController?.pushViewController(vc, animated: true)
+    }
 
+    private func pop(animated: Bool){
+        viewController?.navigationController?.popViewController(animated: animated)
+    }
+    
     // MARK: Passing data
 
-    // func passDataToSomewhere(source: CreateCounterDataStore, destination: inout SomewhereDataStore) {
-    //  destination.name = source.name
-    //}
 }

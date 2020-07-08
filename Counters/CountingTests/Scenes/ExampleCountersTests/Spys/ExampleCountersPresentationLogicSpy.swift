@@ -12,6 +12,4 @@ class ExampleCountersPresentationLogicSpy: ExampleCountersPresentationLogic {
         presentExamplesCalled = true
         presentExamplesResponse = response
     }
-
-
 }

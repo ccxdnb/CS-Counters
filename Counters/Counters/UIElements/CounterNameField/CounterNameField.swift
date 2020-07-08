@@ -42,7 +42,7 @@ class CounterNameField: UITextField {
         layer.cornerRadius = 8
         clipsToBounds = true
         backgroundColor = .white
-        textColor = .black
+        textColor = UIColor(named: "black")
         placeholder = "Cups of coffee"
         heightAnchor.constraint(equalToConstant: 56).isActive = true
         activityIndicator.frame.origin.x -= 10

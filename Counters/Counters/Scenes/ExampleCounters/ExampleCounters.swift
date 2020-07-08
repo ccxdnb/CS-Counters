@@ -4,7 +4,6 @@
 //
 //
 
-// swiftlint:disable nesting
 enum ExampleCounters {
 
     enum Examples {
@@ -26,5 +25,3 @@ enum ExampleCounters {
         }
     }
 }
-
-// swiftlint:enable nesting

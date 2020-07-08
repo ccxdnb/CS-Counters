@@ -120,8 +120,6 @@
 		8EFEC77A24A7F92B00218566 /* Counter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EFEC77824A7F92B00218566 /* Counter.swift */; };
 		8EFEC78024A7FB6100218566 /* CounterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EFEC77F24A7FB6100218566 /* CounterTableViewCell.swift */; };
 		8EFEC78124A7FB6100218566 /* CounterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EFEC77F24A7FB6100218566 /* CounterTableViewCell.swift */; };
-		8EFEC78724A80F8000218566 /* ColorHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EFEC78624A80F8000218566 /* ColorHelper.swift */; };
-		8EFEC78824A80F8000218566 /* ColorHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EFEC78624A80F8000218566 /* ColorHelper.swift */; };
 		8EFEC78B24A812AA00218566 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EFEC78A24A812AA00218566 /* UIView+Extensions.swift */; };
 		8EFEC78C24A812AA00218566 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EFEC78A24A812AA00218566 /* UIView+Extensions.swift */; };
 		8EFEC78F24A82A2A00218566 /* MainActivityPlaceholderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EFEC78E24A82A2A00218566 /* MainActivityPlaceholderView.swift */; };
@@ -230,7 +228,6 @@
 		8EFEC77224A7C51900218566 /* CountingList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = CountingList.storyboard; path = ../../Resources/CountingList/CountingList.storyboard; sourceTree = "<group>"; };
 		8EFEC77824A7F92B00218566 /* Counter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Counter.swift; sourceTree = "<group>"; };
 		8EFEC77F24A7FB6100218566 /* CounterTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterTableViewCell.swift; sourceTree = "<group>"; };
-		8EFEC78624A80F8000218566 /* ColorHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorHelper.swift; sourceTree = "<group>"; };
 		8EFEC78A24A812AA00218566 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
 		8EFEC78E24A82A2A00218566 /* MainActivityPlaceholderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainActivityPlaceholderView.swift; sourceTree = "<group>"; };
 		8EFEC79424A82FCB00218566 /* MainActivityPlaceholder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainActivityPlaceholder.swift; sourceTree = "<group>"; };
@@ -490,7 +487,6 @@
 				8EFEC78924A8128E00218566 /* Extensions */,
 				8EFEC75D24A7C11D00218566 /* UIElements */,
 				8EFEC77624A7F8F300218566 /* Models */,
-				8EFEC77524A7C6A200218566 /* Helpers */,
 				8EFEC75C24A7BEEF00218566 /* Resources */,
 			);
 			path = Counters;
@@ -560,14 +556,6 @@
 				8EFEC77224A7C51900218566 /* CountingList.storyboard */,
 			);
 			path = CountersList;
-			sourceTree = "<group>";
-		};
-		8EFEC77524A7C6A200218566 /* Helpers */ = {
-			isa = PBXGroup;
-			children = (
-				8EFEC78624A80F8000218566 /* ColorHelper.swift */,
-			);
-			path = Helpers;
 			sourceTree = "<group>";
 		};
 		8EFEC77624A7F8F300218566 /* Models */ = {
@@ -783,7 +771,6 @@
 				8E364A9324AAE634003388A0 /* APICounters.swift in Sources */,
 				8EFEC79824A82FF600218566 /* MainActivityPlaceholderViewData.swift in Sources */,
 				8E364AC524AC5816003388A0 /* BottomButtonsView.swift in Sources */,
-				8EFEC78724A80F8000218566 /* ColorHelper.swift in Sources */,
 				8E26E3BF24AEFDD6004CCF32 /* ExampleCountersInteractor.swift in Sources */,
 				8EB9A08024B4D5560006D6A2 /* ExampleCountersRoutingLogicSpy.swift in Sources */,
 				8E364AB024ABBD4E003388A0 /* CreateCounterInteractor.swift in Sources */,
@@ -847,7 +834,6 @@
 				8EFEC77024A7C31E00218566 /* CountersListInteractor.swift in Sources */,
 				8EB9A06C24B4D4680006D6A2 /* UITableView+Extensions.swift in Sources */,
 				8EB9A09F24B4D9F30006D6A2 /* ExampleCountersViewControllerTests.swift in Sources */,
-				8EFEC78824A80F8000218566 /* ColorHelper.swift in Sources */,
 				8EB9A0CD24B4F5F70006D6A2 /* CountersListBusinessLogicSpy.swift in Sources */,
 				8EFEC79F24A8358700218566 /* String+Extensions.swift in Sources */,
 				8EB9A0C924B4F5F70006D6A2 /* CountersListDisplayLogicSpy.swift in Sources */,
