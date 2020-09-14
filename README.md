@@ -1,9 +1,3 @@
-# Cornershop iOS Development Test
-
-## Before you begin
-You will need to create a private GitHub repository using the information that we provided in this README and invite as collaborators: @matmartinez, @joaquintmp and @hghinaglia. The correct collaborators will be confirmed in the email that contains this file.
-
-Should you have any questions, please reach joaquin.munoz@cornershopapp.com or hector@cornershopapp.com. Specially if they are related to UI design.
 
 ## The test
 Create an iOS app for counting things. You'll need to meet high expectations for quality and functionality. It must meet at least the following:
